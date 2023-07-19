@@ -1,5 +1,5 @@
 import assert from "assert"
-import isWeekday from "../isWeekday.js"
+import isWeekday from "../functions/isWeekday.js"
 
 describe('test isWeekday fuction', function(){
     it("it should return empty string if empty string passed",function(){

@@ -65,26 +65,3 @@ export default(salesData) => {
     return mostProfitable;
   }
   
-  export default(salesData) => {
-    let daySales = {};
-    for (let i = 0; i < salesData.length; i++) {
-      let day = salesData[i].day;
-      let sales = salesData[i].sales;
-      if (daySales[day]) {
-        daySales[day] += sales;
-      } else {
-        daySales[day] = sales;
-      }
-    }
-  
-    let maxSales = 0;
-    let mostProfitable;
-    for (let day in daySales) {
-      if (daySales[day] > maxSales) {
-        maxSales = daySales[day];
-        mostProfitable = day;
-      }
-    }
-  
-    return mostProfitable;
-  }

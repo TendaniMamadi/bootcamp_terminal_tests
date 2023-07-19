@@ -1,5 +1,5 @@
 import assert from "assert"
-import countAllFromTown from "../countAllFromTown.js"
+import countAllFromTown from "../functions/countAllFromTown.js"
 
 describe('test my countAllFromTown',function(){
     it('it should return 3 when passed with registration numbers from Stellenbosch',function(){
@@ -17,11 +17,5 @@ describe('test my countAllFromTown',function(){
         assert.equal(fromKuilsriver, 1)
     })
 
-    it('it should return 0 when passed with empty registration numbers string',function(){
-
-        var fromKuilsriver = countAllFromTown('');
-       
-        assert.equal(undefined)
-    })
 
 })
